@@ -115,3 +115,17 @@ describe('Books API', () => {
     expect(response.body).toEqual([]);
   });
 });
+
+describe('Simple Test Example', () => {
+  let aVariable: number;
+
+  // Function executed before running each `it` block
+  beforeEach(() => {
+    aVariable = 0;
+  });
+
+  it('should increment aVariable by 1', () => {
+    aVariable += 1;
+    expect(aVariable).toEqual(1);
+  });
+});
